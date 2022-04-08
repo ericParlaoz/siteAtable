@@ -3,8 +3,9 @@
 {% block title %}Hello AccueilController!{% endblock %}
 
  {% block stylesheets %}
-{{ parent() }}
-     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css') }}">
+     {{ parent() }}
+     <link rel="stylesheet"
+           href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css') }}">
  {% endblock %}
 
 {% block javascripts %}
@@ -16,69 +17,185 @@
 {% endblock %}
 
 {% block body %}
-   <section class="section1">
-       <div class="parallax-effect">
-           <div class="container">
-               <div class="row align-items-center">
-                   <div class="col">
-                       <H1 class="H1-blanc wow animate__animated animate__backInRight">Vos repas livrés à domicile dans tout l'hérault</H1>
-                       <ul class="P-blanc">
-                           <li>Paiement possible par carte titres-restaurant</li>
-                           <li>Livraison toute la semaine</li>
-                           <li>100% frais, fait-maison et naturel</li>
-                           <li></li>
-                       </ul>
-                       <a class="btn button" href="/">Je découvre</a>
-                   </div>
-                   <div class="col"></div>
-               </div>
-           </div>
-       </div>
-   </section>
+    <section class="section1">
+        <div class="parallax-effect">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <H1 class="H1-blanc">Vos repas livrés à domicile dans
+                            tout l'hérault</H1>
+                        <ul class="P-blanc">
+                            <li>Paiement possible par carte titres-restaurant</li>
+                            <li>Livraison toute la semaine</li>
+                            <li>100% frais, fait-maison et naturel</li>
+                            <li></li>
+                        </ul>
+                        <div class="mb-3">
+                        <a class="btn button " href="/">Je découvre</a>
+                        <a class="btn button2 text-center" href="/">Voir les menus de la semaine</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="img-taille wow animate__animated animate__slideInRight" src="{{ asset('images/logo.svg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section2">
-        <div class="container text-center">
+        <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <h2 class="H2-noir">Comment ça marche ?</h2>
+                    <h2 class="H2-noir">Portage de repas à domicile dans l'hérault</h2>
+                    <h3 class="H3-rouge">comment ça marche ?</h3>
                     <hr class="barre-rouge mx-auto">
                 </div>
                 <div class="row text-center">
                     <div class="col wow animate__animated animate__zoomIn">
                         <div class="card">
+                            <img class="mx-auto d-block" src="{{ asset('images/choisir.png') }}" width="80" alt="">
+                            <h4 class="H4-noir">Choisissez une formule</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam, at cupiditate
+                                dicta, eligendi esse eum.</p>
+                        </div>
+                    </div>
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="card">
+                            <img class="mx-auto d-block" src="{{ asset('images/planifier.png') }}" width="80" alt="">
+                            <h4 class="H4-noir">Plannifiez votre livraison</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam, at cupiditate
+                                dicta, eligendi esse eum.</p>
+                        </div>
+                    </div>
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="card">
+                            <img class="mx-auto d-block" src="{{ asset('images/livraison.png') }}" width="80" alt="">
+                            <h4 class="H4-noir">Nous vous livrons à domicile</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam, at cupiditate
+                                dicta, eligendi esse eum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="img-taille mx-auto d-block " src="{{ asset('images/livraison-repas-poussan.jpg') }}"
+                         alt="">
+                </div>
+                <div class="col wow animate__animated animate__zoomIn">
+                    <H2 class="H2-noir">Des menus variés et personnalisés</H2>
+                    <h3 class="H3-rouge">Livrables à Gigean, poussan et dans tout l'hérault</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam consequatur debitis deleniti
+                        eligendi fugiat fugit ipsum molestias nihil nobis, obcaecati praesentium quam quibusdam saepe
+                        tempore temporibus veritatis voluptate! Temporibus!</p>
+                    <a class="btn button" href="/">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="parallax-effect2">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col mt-5">
+                        <h2 class="H2-blanc">Exemples de menus sur une semaine</h2>
+                        <hr class="barre-rouge mx-auto">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="card">
                             <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
-                            <h4 class="H4-couleur">Choisissez une formule</h4>
-                            <p>Vous choisissez vos repas à partir de notre menu de la semaine, ainsi que le nombre de repas souhaités.</p>
+                            <h4 class="H4-rouge">Lundi</h4>
+                            <ul>
+                                <li>Macédoine</li>
+                                <li>Beuf Bourguignon</li>
+                                <li>Coquillettes</li>
+                                <li>Fromage</li>
+                                <li>Fruits</li>
+                                <hr>
+                                <li>Pois chiche ou Potage</li>
+                                <li>Emincé de poulet</li>
+                                <li>Brocolis au jus</li>
+                                <li>Laitage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="card">
+                            <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
+                            <h4 class="H3-rouge-couleur">Plannifiez votre livraison</h4>
+                            <p>Vous pouvez anticiper votre commande deux mois à l’avance. Facilitez votre retour à
+                                domicile ou appréciez simplement notre service et nos plats.</p>
                         </div>
                     </div>
                     <div class="col wow animate__animated animate__zoomIn">
                         <div class="card">
                             <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
                             <h4 class="H4-couleur">Plannifiez votre livraison</h4>
-                            <p>Vous pouvez anticiper votre commande deux mois à l’avance. Facilitez votre retour à domicile ou appréciez simplement notre service et nos plats.</p>
+                            <p>Vous pouvez anticiper votre commande deux mois à l’avance. Facilitez votre retour à
+                                domicile ou appréciez simplement notre service et nos plats.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="card">
+                            <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
+                            <h4 class="H4-couleur">Plannifiez votre livraison</h4>
+                            <p>Vous pouvez anticiper votre commande deux mois à l’avance. Facilitez votre retour à
+                                domicile ou appréciez simplement notre service et nos plats.</p>
                         </div>
                     </div>
                     <div class="col wow animate__animated animate__zoomIn">
                         <div class="card">
                             <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
-                            <h4 class="H4-couleur">Nous vous livrons à domicile</h4>
-                            <p>Nos équipes livrent ces repas personnalisés et équilibrés, chez vous ou vos proches : déjeuner ou dîner complet, repas gourmand ou repas mixé.</p>
+                            <h4 class="H4-couleur">Plannifiez votre livraison</h4>
+                            <p>Vous pouvez anticiper votre commande deux mois à l’avance. Facilitez votre retour à
+                                domicile ou appréciez simplement notre service et nos plats.</p>
+                        </div>
+                    </div>
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="card">
+                            <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
+                            <h4 class="H4-couleur">Plannifiez votre livraison</h4>
+                            <p>Vous pouvez anticiper votre commande deux mois à l’avance. Facilitez votre retour à
+                                domicile ou appréciez simplement notre service et nos plats.</p>
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-3 pb-5 wow animate__animated animate__zoomIn">
+                    <H3 class="H3-blanc">Livraison possible les mardis et Jeudis</H3>
+                    <a class="btn button text-center" href="/">Commander mes repas</a>
+                    <a class="btn button2 text-center" href="/">Voir les menus de la semaine</a>
+                </div>
             </div>
-            </div>
+        </div>
     </section>
-    <section class="section3">
+    <section class="section5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col">
-                    <img class="img-fluid" src="{{ asset('images/livraison-repas-poussan.jpg') }}" alt="">
+                <div class="col wow animate__animated animate__backInLeft">
+                    <h2 class="H2-noir">Livraison de repas à domicile à Poussan </h2>
+                    <h3 class="H3-rouge">Éligible au service à la personne</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem ea earum excepturi id in ipsa itaque laudantium minima mollitia nihil omnis optio placeat quis quos, reiciendis rem sed voluptatem.</p>
                 </div>
                 <div class="col">
-                    <H2 class="H2-noir wow animate__animated animate__zoomIn">Des menus variés et personnalisés</H2>
-                    <h3 class="H3-rouge">Livrables à Gigean, poussan et dans tout l'hérault</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam consequatur debitis deleniti eligendi fugiat fugit ipsum molestias nihil nobis, obcaecati praesentium quam quibusdam saepe tempore temporibus veritatis voluptate! Temporibus!</p>
-                    <a class="btn button" href="/">En savoir plus</a>
+                    <img class="img-taille d-block mx-auto" src="{{ asset('images/voiture.jpg') }}" alt="Service à la personne sur nos services">
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col">
+                    <img class="img-taille d-block mx-auto" src="{{ asset('images/service-personne.jpg') }}" alt="Service à la personne sur nos services">
+                </div>
+                <div class="col wow animate__animated animate__backInRight">
+                    <h2 class="H2-noir">Portage de repas à domicile</h2>
+                    <h3 class="H3-rouge">Éligible au service à la personne</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem ea earum excepturi id in ipsa itaque laudantium minima mollitia nihil omnis optio placeat quis quos, reiciendis rem sed voluptatem.</p>
                 </div>
             </div>
         </div>

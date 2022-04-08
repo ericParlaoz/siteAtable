@@ -18,6 +18,10 @@ body {
     max-width: 1080px;
 }
 
+.img-taille {
+    max-width: 450px;
+}
+
 .H1-blanc {
     padding-top: 70px;
     color: #FFFFFF;
@@ -28,18 +32,40 @@ body {
 .H2-noir {
     color: #000000;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
+}
+
+.H2-blanc {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .H3-rouge {
     color: #c01b28;
     text-transform: uppercase;
-    font-size: 15px;
-
+    font-size: 20px;
 }
 
+.H3-blanc {
+    color: #ffffff;
+}
+
+.H4-rouge {
+    color: #c01b28;
+}
+
+.H4-noir {
+    color: #000000;
+}
+
+.H4-blanc {
+    color: #FFFFFF;
+}
+
+
 .barre-rouge {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 60px;
     color: #c01b28;
     width: 300px;
@@ -58,6 +84,17 @@ body {
     font-size: 20px;
 }
 
+.button2 {
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    font-size: 20px;
+}
+
+.button2:hover {
+    color: #c01b28;
+}
+
 .card {
     padding: 20px;
     border-radius: 20px;
@@ -69,9 +106,8 @@ body {
 }
 
 .card:hover {
-    -webkit-box-shadow: 10px 10px 14px 4px rgba(238, 43, 88, 0.16);
-    box-shadow: 10px 10px 14px 4px rgba(238, 43, 88, 0.16);
-    border: 1px solid white;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 26px 1px 10px rgba(192,27,40,0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 26px 1px 10px rgba(192,27,40,0);
 }
 
 .section1{
@@ -88,8 +124,26 @@ body {
     padding-bottom: 50px;
 }
 
+.section4 {
+
+}
+
+.section5 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
 .parallax-effect {
     background-image: url('../images/livraison-repas-à-domicile.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-effect2 {
+    background-image: url('../images/bg-menu-à-domicile.jpg');
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -126,8 +180,8 @@ body {
 
 @media screen and (max-width: 500px) {
     .card,
-    .card-show,
-    .card-show2 {
+    .img-taille
+     {
         width: 330px;
         margin: auto;
         margin-bottom: 20px;
@@ -139,8 +193,7 @@ body {
         margin-bottom: 20px;
     }
 
-    .block-responsive,
-    .block-iframe {
+    .block-responsive {
         width: 330px;
         margin: auto;
         margin-bottom: 20px;
@@ -148,7 +201,9 @@ body {
 
 
     @media screen and (max-width: 850px) {
-        .card {
+        .card,
+        .img-taille
+        {
             width: 300px;
             margin: auto;
             margin-bottom: 20px;
