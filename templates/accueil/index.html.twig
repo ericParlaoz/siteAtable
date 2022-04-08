@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!{% endblock %}
+
+ {% block stylesheets %}
+{{ parent() }}
+     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css') }}">
+ {% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script type="text/javascript">
+        new WOW().init()
+    </script>
+{% endblock %}
+
+{% block body %}
+   <section class="section1">
+       <div class="parallax-effect">
+           <div class="container">
+               <div class="row align-items-center">
+                   <div class="col">
+                       <H1 class="H1-blanc wow animate__animated animate__backInRight">Vos repas livrés à domicile dans tout l'hérault</H1>
+                       <ul class="P-blanc">
+                           <li>Paiement possible par carte titres-restaurant</li>
+                           <li>Livraison toute la semaine</li>
+                           <li>100% frais, fait-maison et naturel</li>
+                           <li></li>
+                       </ul>
+                       <a class="btn button" href="/">Je découvre</a>
+                   </div>
+                   <div class="col"></div>
+               </div>
+           </div>
+       </div>
+   </section>
+    <section class="section2">
+        <div class="container text-center">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="H2-noir">Comment ça marche ?</h2>
+                    <hr class="barre-rouge mx-auto">
+                </div>
+                <div class="row text-center">
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="card">
+                            <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
+                            <h4 class="H4-couleur">Choisissez une formule</h4>
+                            <p>Vous choisissez vos repas à partir de notre menu de la semaine, ainsi que le nombre de repas souhaités.</p>
+                        </div>
+                    </div>
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="card">
+                            <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
+                            <h4 class="H4-couleur">Plannifiez votre livraison</h4>
+                            <p>Vous pouvez anticiper votre commande deux mois à l’avance. Facilitez votre retour à domicile ou appréciez simplement notre service et nos plats.</p>
+                        </div>
+                    </div>
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="card">
+                            <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
+                            <h4 class="H4-couleur">Nous vous livrons à domicile</h4>
+                            <p>Nos équipes livrent ces repas personnalisés et équilibrés, chez vous ou vos proches : déjeuner ou dîner complet, repas gourmand ou repas mixé.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="section3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="img-fluid" src="{{ asset('images/livraison-repas-poussan.jpg') }}" alt="">
+                </div>
+                <div class="col">
+                    <H2 class="H2-noir wow animate__animated animate__zoomIn">Des menus variés et personnalisés</H2>
+                    <h3 class="H3-rouge">Livrables à Gigean, poussan et dans tout l'hérault</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam consequatur debitis deleniti eligendi fugiat fugit ipsum molestias nihil nobis, obcaecati praesentium quam quibusdam saepe tempore temporibus veritatis voluptate! Temporibus!</p>
+                    <a class="btn button" href="/">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

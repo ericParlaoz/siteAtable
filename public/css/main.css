@@ -1,0 +1,181 @@
+body {
+    font-family: "montserrat", sans-serif;
+    font-size: 17px;
+    color: dimgrey;
+    font-weight: lighter;
+}
+
+.navbar {
+   position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.logo {
+    width: 150px;
+}
+
+.container {
+    max-width: 1080px;
+}
+
+.H1-blanc {
+    padding-top: 70px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.H2-noir {
+    color: #000000;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.H3-rouge {
+    color: #c01b28;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+
+.barre-rouge {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    color: #c01b28;
+    width: 300px;
+    border: 1px solid #c01b28;
+    opacity: inherit;
+}
+
+.P-blanc {
+    color: #FFFFFF;
+}
+
+.button {
+    color: #FFFFFF;
+    border-radius: 20px;
+    background-color: #c01b28;
+    font-size: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin: 10px;
+    width: auto;
+}
+
+.card:hover {
+    -webkit-box-shadow: 10px 10px 14px 4px rgba(238, 43, 88, 0.16);
+    box-shadow: 10px 10px 14px 4px rgba(238, 43, 88, 0.16);
+    border: 1px solid white;
+}
+
+.section1{
+    padding-top: 90px;
+}
+
+.section2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.parallax-effect {
+    background-image: url('../images/livraison-repas-à-domicile.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 380px) {
+    .card,
+    .card-show,
+    .card-show2 {
+        width: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+    .temoignage {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .block-responsive,
+    .block-iframe {
+        width: 330px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .card,
+    .card-show,
+    .card-show2 {
+        width: 330px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+    .temoignage {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .block-responsive,
+    .block-iframe {
+        width: 330px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+    @media screen and (max-width: 850px) {
+        .card {
+            width: 300px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .temoignage {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .block-responsive,
+        .block-iframe {
+            width: 300px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    @media only screen and (max-device-width: 1366px) {
+        .parallax-effect {
+            background-attachment: scroll;
+        }
+
+        .parallax-effect2 {
+            background-attachment: scroll;
+        }
+    }
+}
+
