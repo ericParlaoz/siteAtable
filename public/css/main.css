@@ -10,6 +10,10 @@ body {
     width: 100%;
     z-index: 1;
 }
+
+.navbar-nav {
+    padding-left: 50px;
+}
 .logo {
     width: 150px;
 }
@@ -20,6 +24,10 @@ body {
 
 .img-taille {
     max-width: 450px;
+}
+
+.img-taille-client {
+    max-width: 200px;
 }
 
 .H1-blanc {
@@ -49,6 +57,8 @@ body {
 
 .H3-blanc {
     color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 .H4-rouge {
@@ -129,6 +139,17 @@ body {
 }
 
 .section5 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section6 {
+    background-color: #c01b28;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section7 {
     padding-top: 70px;
     padding-bottom: 70px;
 }
