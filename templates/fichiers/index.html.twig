@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fichiers index{% endblock %}
+
+{% block body %}
+    <section class="section-admin">
+        <div class="container">
+            <div class="row">
+                <div class="card-admin">
+                    <h1>Fichiers index</h1>
+
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>UpdatedAt</th>
+                            <th>CreatedAt</th>
+                            <th>FileName</th>
+                            <th>actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for fichier in fichiers %}
+                            <tr>
+                                <td>{{ fichier.id }}</td>
+                                <td>{{ fichier.title }}</td>
+                                <td>{{ fichier.UpdatedAt ? fichier.UpdatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                                <td>{{ fichier.CreatedAt ? fichier.CreatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                                <td>{{ fichier.fileName }}</td>
+                                <td>
+                                    <a class="btn btn-primary"
+                                       href="{{ path('app_fichiers_show', {'id': fichier.id}) }}">Voir</a>
+                                    <a class="btn btn-success "
+                                       href="{{ path('app_fichiers_edit', {'id': fichier.id}) }}">Éditer</a>
+                                </td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td colspan="6">Pas de résultat</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+                    <a class="btn btn-success" href="{{ path('app_fichiers_new') }}">Créer nouveau</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

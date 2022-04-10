@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Fichiers{% endblock %}
+
+{% block body %}
+    <section class="section-admin">
+    <div class="container">
+        <div class="row">
+            <div class="card-admin">
+                <h1>Nouveau fichier</h1>
+
+                {{ include('fichiers/_form.html.twig') }}
+
+                <a class="btn btn-primary" href="{{ path('app_fichiers_index') }}">Retour</a>
+            </div>
+        </div>
+    </div>
+    </section>
+{% endblock %}

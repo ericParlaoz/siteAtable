@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fichiers{% endblock %}
+
+{% block body %}
+    <section class="section-admin">
+        <div class="container">
+            <div class="row">
+                <div class="card-admin">
+                    <h1>Fichiers</h1>
+
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>Id</th>
+                            <td>{{ fichier.id }}</td>
+                        </tr>
+                        <tr>
+                            <th>Title</th>
+                            <td>{{ fichier.title }}</td>
+                        </tr>
+                        <tr>
+                            <th>UpdatedAt</th>
+                            <td>{{ fichier.UpdatedAt ? fichier.UpdatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                        </tr>
+                        <tr>
+                            <th>CreatedAt</th>
+                            <td>{{ fichier.CreatedAt ? fichier.CreatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                        </tr>
+                        <tr>
+                            <th>FileName</th>
+                            <td>{{ fichier.fileName }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <a class="btn btn-primary" href="{{ path('app_fichiers_index') }}">Retour</a>
+
+                    <a class="btn btn-success" href="{{ path('app_fichiers_edit', {'id': fichier.id}) }}">Éditer</a>
+
+                    {{ include('fichiers/_delete_form.html.twig') }}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
