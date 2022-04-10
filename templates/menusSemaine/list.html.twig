@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MenusSemaineController!{% endblock %}
+
+{% block body %}
+    <section class="section1">
+    <div class="container mt-4">
+        <h1>Liste des fichiers</h1>
+        <hr>
+
+        <div class="row">
+            {% for fichier in fichiers %}
+                <div class="col-12 mb-3">
+                    {{ fichier.title }}
+                    <a href="{{ vich_uploader_asset(fichier, 'file') }}" download="{{ fichier.title }}" class="btn btn-primary">Télécharger</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    </section>
+{% endblock %}

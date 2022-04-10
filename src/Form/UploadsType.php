@@ -3,7 +3,9 @@
 namespace App\Form;
 
 use App\Entity\Fichiers;
+use Doctrine\DBAL\Types\DateTimeImmutableType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Vich\UploaderBundle\Form\Type\VichFileType;
@@ -18,8 +20,8 @@ class UploadsType extends AbstractType
             'attr' => ['placeholder' => 'Nom du fichier'],
             'required' => false
         ])
-           // ->add('UpdatedAt')
-           //->add('CreatedAt')
+         //  ->add('UpdatedAt')
+           ->add('CreatedAt')
            ->add('file', VichFileType::class, [
             'required' => false,
                'allow_delete' => true,

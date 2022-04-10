@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MenusSemaineController!{% endblock %}
+
+{% block body %}
+    <section class="section1">
+        <div class="container mt-4">
+            <h1>Modifier le fichier</h1>
+            <hr>
+
+            {{ form_start(form, {'attr':{'class':'row'}}) }}
+            <div class="col-12 col-md-6">
+                {{ form_row(form.title) }}
+            </div>
+            <div class="col-col-md-6">
+                {{ form_row(form.file) }}
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Modifier !</button>
+            </div>
+            {{ form_end(form) }}
+
+        </div>
+    </section>
+{% endblock %}
