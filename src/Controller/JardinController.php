@@ -6,11 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class AccueilController extends AbstractController
+class JardinController extends AbstractController
 {
-    #[Route('/', name: 'app_accueil')]
+    #[Route('/entretien-jardin-herault', name: 'app_jardin')]
     public function index(): Response
     {
-        return $this->render('accueil/index.html.twig');
+        return $this->render('jardin/index.html.twig', [
+            'controller_name' => 'JardinController',
+        ]);
     }
 }

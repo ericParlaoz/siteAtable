@@ -32,16 +32,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="/">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Livraison repas à domicile</a>
+                            <a class="nav-link" href="{{ path('app_menus') }}">Livraison repas à domicile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Entretien jardin</a>
+                            <a class="nav-link" href="{{ path('app_jardin') }}">Entretien jardin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contactez-nous</a>
+                            <a class="nav-link" href="{{ path('app_contact') }}" tabindex="-1" aria-disabled="true">Contactez-nous</a>
                         </li>
                     </ul>
                 </div>
@@ -87,7 +87,7 @@
 
                     <!--Grid column-->
                     <div class="col">
-                        <h4 class="H4-rouge text-uppercase">Livraison</h4>
+                        <h4 class="H4-rouge text-uppercase">Livraison repas à domicile</h4>
 
                         <ul class="list-unstyled mb-0">
                             <li>
