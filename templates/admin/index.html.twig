@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fichiers index{% endblock %}
+
+{% block body %}
+    <section class="section-admin">
+        <div class="container">
+            <div class="row">
+                <div class="card-admin">
+                    <h1>Menu de la semaine</h1>
+                    <div class="row">
+                    <div class="col">
+                        <h5>Titre</h5>
+                    </div>
+                    <div class="col">
+                        <h5>Modifié le</h5>
+                    </div>
+                    <div class="col">
+                        <h5>Crée le</h5>
+                    </div>
+                    <div class="col">
+                        <h5>Nom du fichier</h5>
+                    </div>
+                        <div class="col">
+                            <h5>Actions</h5>
+                        </div>
+                    </div>
+                        {% for fichier in fichiers %}
+                            <div class="row">
+                                <div class="col">
+                                    {{ fichier.title }}
+                                </div>
+                                <div class="col">
+                                    {{ fichier.UpdatedAt ? fichier.UpdatedAt|date('Y-m-d H:i:s') : '' }}
+                                </div>
+                                <div class="col">
+                                    {{ fichier.CreatedAt ? fichier.CreatedAt|date('Y-m-d H:i:s') : '' }}
+                                </div>
+                                <div class="col">
+                                    {{ fichier.fileName }}
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="{{ path('app_fichiers_show', {'id': fichier.id}) }}">Voir</a>
+                                    <a class="btn btn-success " href="{{ path('app_fichiers_edit', {'id': fichier.id}) }}">Éditer</a>
+                                </div>
+                            </div>
+
+                        {% else %}
+                            <tr>
+                                <td colspan="6">Pas de résultat</td>
+                            </tr>
+                        {% endfor %}
+
+
+
+                    <a class="btn btn-success" href="{{ path('app_fichiers_new') }}">Créer nouveau</a>
+                    <a class="btn btn-danger" href="{{ path('app_logout') }}">Deconnexion</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
