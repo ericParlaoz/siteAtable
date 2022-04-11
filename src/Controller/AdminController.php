@@ -10,13 +10,13 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/fichiers')]
-class FichiersController extends AbstractController
+#[Route('/admin')]
+class AdminController extends AbstractController
 {
     #[Route('/', name: 'app_fichiers_index', methods: ['GET'])]
     public function index(FichiersRepository $fichiersRepository): Response
     {
-        return $this->render('fichiers/index.html.twig', [
+        return $this->render('admin/index.html.twig', [
             'fichiers' => $fichiersRepository->findAll(),
         ]);
     }
@@ -33,7 +33,7 @@ class FichiersController extends AbstractController
             return $this->redirectToRoute('app_fichiers_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('fichiers/new.html.twig', [
+        return $this->renderForm('admin/new.html.twig', [
             'fichier' => $fichier,
             'form' => $form,
         ]);
@@ -42,7 +42,7 @@ class FichiersController extends AbstractController
     #[Route('/{id}', name: 'app_fichiers_show', methods: ['GET'])]
     public function show(Fichiers $fichier): Response
     {
-        return $this->render('fichiers/show.html.twig', [
+        return $this->render('admin/show.html.twig', [
             'fichier' => $fichier,
         ]);
     }
@@ -58,7 +58,7 @@ class FichiersController extends AbstractController
             return $this->redirectToRoute('app_fichiers_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('fichiers/edit.html.twig', [
+        return $this->renderForm('admin/edit.html.twig', [
             'fichier' => $fichier,
             'form' => $form,
         ]);

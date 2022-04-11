@@ -13,9 +13,13 @@ class FichiersType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('title')
+            ->add('title',null, [
+                'label' => 'Titre'
+            ])
            // ->add('UpdatedAt')
-            ->add('CreatedAt')
+            ->add('CreatedAt',null, [
+               'label' => 'Date de création'
+           ])
             ->add('file', VichFileType::class, [
                 'required' => false,
                 'allow_delete' => true,
