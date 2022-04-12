@@ -31,7 +31,7 @@ body {
 }
 
 .H1-blanc {
-    padding-top: 70px;
+    padding-top: 110px;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 50px;
@@ -61,6 +61,12 @@ body {
     font-size: 20px;
 }
 
+.H3-vert {
+    color: green;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
 .H4-rouge {
     color: #c01b28;
 }
@@ -83,6 +89,15 @@ body {
     opacity: inherit;
 }
 
+.barre-verte {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: green;
+    width: 300px;
+    border: 1px solid green;
+    opacity: inherit;
+}
+
 .P-blanc {
     color: #FFFFFF;
 }
@@ -98,6 +113,13 @@ body {
     color: #FFFFFF;
     border-radius: 20px;
     border: 1px solid #FFFFFF;
+    font-size: 20px;
+}
+
+.button-jardin {
+    color: #FFFFFF;
+    border-radius: 20px;
+    background-color: green;
     font-size: 20px;
 }
 
@@ -130,8 +152,8 @@ body {
     box-shadow: 0px 10px 13px -7px #000000, 5px 26px 1px 10px rgba(192,27,40,0);
 }
 
-.section1{
-    padding-top: 90px;
+.section1 {
+    padding-top: 50px;
 }
 
 .section2 {
@@ -186,6 +208,33 @@ body {
 
 .parallax-effect2 {
     background-image: url('../images/bg-menu.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-effect3 {
+    background-image: url('../images/bg-portage-repas.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-effect-contact {
+    background-image: url('../images/bg-repas-herault.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-effect-jardin{
+    background-image: url('../images/bg-entretien-jardin.jpg');
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -266,11 +315,11 @@ body {
     }
 
     @media only screen and (max-device-width: 1366px) {
-        .parallax-effect {
-            background-attachment: scroll;
-        }
-
-        .parallax-effect2 {
+        .parallax-effect,
+        .parallax-effect2,
+        .parallax-effect3,
+        .parallax-effect-jardin
+        {
             background-attachment: scroll;
         }
     }

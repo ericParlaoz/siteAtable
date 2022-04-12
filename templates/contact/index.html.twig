@@ -1,22 +1,49 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}A table, le spécialiste du portage de repas pour personnes âgées à domicile{% endblock %}
 
 {% block body %}
     <section class="section1">`
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                {{ form_row(form.nom) }}
-                {{ form_row(form.telephone) }}
-                {{ form_row(form.email) }}
-                {{ form_row(form.message) }}
-                {{ form_row(form.rgpd) }}
-                J’autorise ce site à conserver mes données personnelles transmises via ce formulaire. Aucune exploitation commerciale ne sera faite des données conservées. Voir notre politique de gestion des données personnelles sur la page (Politique de confidentialité)
-            <button type="submit" class="mt-3 mb-3 btn btn-primary">Envoyer</button>
-
+        <div class="parallax-effect-contact">
+            <div class="container">
+                <div class="row text-center">
+                    <H1 class="H1-blanc">Besoin de nos prestations ? <br> Contactez-nous !</H1>
+                    <hr class="barre-rouge mx-auto">
+                    <p class="P-blanc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut,
+                        consequuntur debitis deserunt dicta dolorem facere libero magnam, maxime minima nihil nostrum
+                        pariatur quae quam quo repudiandae rerum sapiente veritatis.</p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-7">
+                        <div class="card">
+                            <h2 class="">Formulaire</h2>
+                            {{ form_start(form) }}
+                            {{ form_row(form.nom) }}
+                            {{ form_row(form.telephone) }}
+                            {{ form_row(form.email) }}
+                            {{ form_row(form.message) }}
+                            {{ form_row(form.rgpd) }}
+                            J’autorise ce site à conserver mes données personnelles transmises via ce formulaire. Aucune
+                            exploitation commerciale ne sera faite des données conservées. Voir notre politique de
+                            gestion des données personnelles sur la page (Politique de confidentialité)
+                            <br>
+                            <button type="submit" class="mt-3 mb-3 btn button">Envoyer</button>
+                            {{ form_end(form) }}
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2 class="H2-blanc">Contact</h2>
+                        <div class="row P-blanc">
+                            <h6>Adresse e-mail: atable34@hotmail.com</h6>
+                            <h6>Téléphone: 07 </h6>
+                        </div>
+                        <h2 class="H2-blanc">Zone de livraison</h2>
+                        <div class="row P-blanc">
+                            <h6>Poussan – Gigean – Pignan – Meze – Frontignan – Sète – Bouzigues – Marseillan – Loupian – Villeveyrac – Balaruc les bains – Balaruc le vieux – Cournonterral – Cournonsec – Lavénure – Fabrègues </h6>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </section>
 {% endblock %}

@@ -22,21 +22,17 @@
 
 {% block body %}
     <section class="section1">
-        <div class="parallax-effect">
+        <div class="parallax-effect3">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col">
-                        <H1 class="H1-blanc">Vos repas livrés à domicile dans
-                            tout l'hérault</H1>
-                        <ul class="P-blanc">
-                            <li>Paiement possible par carte titres-restaurant</li>
-                            <li>Livraison toute la semaine</li>
-                            <li>100% frais, fait-maison et naturel</li>
-                            <li></li>
-                        </ul>
+                        <H1 class="H1-blanc">Livraison repas à domicile</H1>
+                        <p class="P-blanc">Repas élaboré par des nutritionnistes, des cuisiniers
+                            passionnés par le mariage du goût,
+                            des saveurs et le respect des modes de cuisines traditionnelles.</p>
                         <div class="mb-3">
-                        <a class="btn button " href="{{ asset('#decouvre') }}">Je découvre</a>
-                        <a class="btn button2 text-center" target="_blank" href="../uploads/{{ lienMenu }}">Voir les menus de la semaine</a>
+                            <a class="btn button " href="{{ asset('#decouvre') }}">Je découvre</a>
+                            <a class="btn button2 text-center" target="_blank" href="../uploads/{{ lienMenu }}">Voir les menus de la semaine</a>
                         </div>
                     </div>
                     <div class="col">
@@ -46,82 +42,32 @@
             </div>
         </div>
     </section>
-    <section class="section2" id="decouvre">
+    <section class="section2">
         <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <h2 class="H2-noir">Portage de repas à domicile dans l'hérault</h2>
-                    <h3 class="H3-rouge">comment ça marche ?</h3>
-                    <hr class="barre-rouge mx-auto">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium enim ex illo iste, minus molestias numquam possimus voluptas. Alias autem dicta dolorem expedita fuga laboriosam libero odit quaerat sunt voluptas.</p>
-                </div>
-                <div class="row text-center">
-                    <div class="col wow animate__animated animate__zoomIn">
-                        <div class="card">
-                            <img class="mx-auto d-block" src="{{ asset('images/choisir.png') }}" width="80" alt="">
-                            <h4 class="H4-noir">Choisissez une formule</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam, at cupiditate
-                                dicta, eligendi esse eum.</p>
-                        </div>
-                    </div>
-                    <div class="col wow animate__animated animate__zoomIn">
-                        <div class="card">
-                            <img class="mx-auto d-block" src="{{ asset('images/planifier.png') }}" width="80" alt="">
-                            <h4 class="H4-noir">Plannifiez votre livraison</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam, at cupiditate
-                                dicta, eligendi esse eum.</p>
-                        </div>
-                    </div>
-                    <div class="col wow animate__animated animate__zoomIn">
-                        <div class="card">
-                            <img class="mx-auto d-block" src="{{ asset('images/livraison.png') }}" width="80" alt="">
-                            <h4 class="H4-noir">Nous vous livrons à domicile</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam, at cupiditate
-                                dicta, eligendi esse eum.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section3">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <img class="img-taille mx-auto d-block " src="{{ asset('images/livraison-repas-poussan.jpg') }}"
-                         alt="">
-                </div>
-                <div class="col wow animate__animated animate__zoomIn">
-                    <H2 class="H2-noir">Des menus variés et personnalisés</H2>
-                    <h3 class="H3-rouge">Livrables à Gigean, poussan et dans tout l'hérault</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam consequatur debitis deleniti
-                        eligendi fugiat fugit ipsum molestias nihil nobis, obcaecati praesentium quam quibusdam saepe
-                        tempore temporibus veritatis voluptate! Temporibus!</p>
-                </div>
-            </div>
             <div class="row text-center mt-5">
-                <H2 class="H2-noir">Les tarifs</H2>
+                <H2 class="H2-noir">Les tarifs des livraisons de repas à domicile</H2>
                 <hr class="barre-rouge mx-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur est facere molestiae pariatur quia quis quo tempore, tenetur voluptates? Ab corporis et expedita fuga mollitia nulla quo repellendus vero.</p>
             </div>
-            <div class="row text-center">
+            <div class="row mt-5 text-center">
                 <div class="col wow animate__animated animate__zoomIn">
                     <div class="block-responsive">
-                    <h3 class="H3-rouge">Formules midi</h3>
-                    <p>Entrée plat et garniture</p>
-                    <h4 class="H4-noir">9,00€</h4>
+                        <h3 class="H3-rouge">Formules midi</h3>
+                        <p>Entrée plat et garniture</p>
+                        <h4 class="H4-noir">9,00€</h4>
                     </div>
                 </div>
                 <div class="col wow animate__animated animate__zoomIn">
                     <div class="block-responsive">
-                    <h3 class="H3-rouge">Formules soir</h3>
-                    <p>Potage ou entrée<br>Plat et garniture<br>Déssert</p>
-                    <h4 class="H4-noir">8,00€</h4>
+                        <h3 class="H3-rouge">Formules soir</h3>
+                        <p>Potage ou entrée<br>Plat et garniture<br>Déssert</p>
+                        <h4 class="H4-noir">8,00€</h4>
                     </div>
                 </div>
                 <div class="col wow animate__animated animate__zoomIn">
                     <div class="block-responsive">
-                    <h3 class="H3-rouge">Formules midi et soir</h3>
-                    <h4 class="H4-noir">16,50€</h4>
+                        <h3 class="H3-rouge">Formules midi et soir</h3>
+                        <h4 class="H4-noir">16,50€</h4>
                     </div>
                 </div>
             </div>
@@ -131,7 +77,7 @@
             </div>
         </div>
     </section>
-    <section class="section4">
+    <section class="section3">
         <div class="parallax-effect2">
             <div class="container">
                 <div class="row text-center">
@@ -268,58 +214,6 @@
             </div>
         </div>
     </section>
-    <section class="section5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col wow animate__animated animate__backInLeft">
-                    <h2 class="H2-noir">Livraison de repas à domicile à Poussan </h2>
-                    <h3 class="H3-rouge">Éligible au service à la personne</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem ea earum excepturi id in ipsa itaque laudantium minima mollitia nihil omnis optio placeat quis quos, reiciendis rem sed voluptatem.</p>
-                </div>
-                <div class="col">
-                    <img class="img-taille d-block mx-auto" src="{{ asset('images/voiture.jpg') }}" alt="Service à la personne sur nos services">
-                </div>
-            </div>
-            <div class="row align-items-center mt-5">
-                <div class="col">
-                    <img class="img-taille d-block mx-auto" src="{{ asset('images/service-personne.jpg') }}" alt="Service à la personne sur nos services">
-                </div>
-                <div class="col wow animate__animated animate__backInRight">
-                    <h2 class="H2-noir">Portage de repas à domicile</h2>
-                    <h3 class="H3-rouge">Éligible au service à la personne</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem ea earum excepturi id in ipsa itaque laudantium minima mollitia nihil omnis optio placeat quis quos, reiciendis rem sed voluptatem.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section6">
-        <div class="container">
-            <div class="row text-center">
-                <H2 class="H2-blanc">Quelques chiffres</H2>
-            </div>
-            <div class="row mt-5 justify-content-center">
-                <div class="col text-center wow animate__animated animate__zoomIn">
-                    <div class="block-responsive">
-                        <H2 class="H2-blanc">30 plats /mois</H2>
-                        <p class="P-blanc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci, beatae, cupiditate eaque eligendi est, exercitationem expedita ipsa ipsum minima.</p>
-                    </div>
-                </div>
-                <div class="col text-center wow animate__animated animate__zoomIn">
-                    <div class="block-responsive">
-                        <H2 class="H2-blanc">95%</H2>
-                        <p class="P-blanc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci, beatae, cupiditate eaque eligendi est, exercitationem expedita ipsa ipsum minima.</p>
-                    </div>
-                </div>
-                <div class="col text-center wow animate__animated animate__zoomIn">
-                    <div class="block-responsive">
-                        <H2 class="H2-blanc">95%</H2>
-                        <p class="P-blanc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci, beatae, cupiditate eaque eligendi est, exercitationem expedita ipsa ipsum minima.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="section7">
         <div class="container">
             <div class="row">
@@ -349,7 +243,7 @@
     <section class="section8">
         <div class="container text-center">
             <div class="row">
-            <H2 class="H2-noir">Nous livrons sur le bassin de Thau et dans tout l'hérault</H2>
+                <H2 class="H2-noir">Nous livrons sur le bassin de Thau et dans tout l'hérault</H2>
                 <hr class="barre-rouge mx-auto">
                 <H5 class>
                     Poussan – Gigean – Pignan – Meze – Frontignan – Sète – Bouzigues – Marseillan – Loupian – Villeveyrac – Balaruc les bains – Balaruc le vieux – Cournonterral – Cournonsec – Lavénure – Fabrègues
