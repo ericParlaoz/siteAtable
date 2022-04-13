@@ -14,18 +14,27 @@ class PagesController extends AbstractController
     {
 
        $fichier = $fichiersRepository->findBy([], ['id' => 'DESC'], 1);
+       if($fichier === []) {
+           throw $this->createNotFoundException('Menu indisponible');
+       }
        $path = $fichier[0]->getFilename();
+
+
+
 
         return $this->render('pages/index.html.twig',[
             'lienMenu' => $path
         ]);
     }
 
-    #[Route('/menu', name: 'app_menu')]
+    #[Route('/livraison-de-repas-gigean', name: 'app_menu')]
     public function menu(FichiersRepository $fichiersRepository): Response
     {
 
         $fichier = $fichiersRepository->findBy([], ['id' => 'DESC'], 1);
+        if($fichier === []) {
+            throw $this->createNotFoundException('Menu indisponible');
+        }
         $path = $fichier[0]->getFilename();
 
         return $this->render('pages/menu.html.twig',[
@@ -33,11 +42,9 @@ class PagesController extends AbstractController
         ]);
     }
 
-    #[Route('/jardin', name: 'app_jardin')]
+    #[Route('/entretien-jardin-herault', name: 'app_jardin')]
     public function jardin(): Response
     {
-
-
 
         return $this->render('pages/jardin.html.twig');
     }

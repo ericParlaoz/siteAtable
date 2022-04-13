@@ -31,7 +31,7 @@
                             passionnés par le mariage du goût,
                             des saveurs et le respect des modes de cuisines traditionnelles.</p>
                         <div class="mb-3">
-                            <a class="btn button " href="{{ asset('#decouvre') }}">Je découvre</a>
+                            <a class="btn button " href="{{ asset('/livraison-de-repas-gigean#tarifs') }}">Les tarifs</a>
                             <a class="btn button2 text-center" target="_blank" href="../uploads/{{ lienMenu }}">Voir les menus de la semaine</a>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
             </div>
         </div>
     </section>
-    <section class="section2">
+    <section class="section2" id="tarifs">
         <div class="container">
             <div class="row text-center mt-5">
                 <H2 class="H2-noir">Les tarifs des livraisons de repas à domicile</H2>
@@ -72,12 +72,13 @@
                 </div>
             </div>
             <div class="text-center mt-5 pb-3 wow animate__animated animate__zoomIn">
-                <a class="btn button" target="_blank" href="../uploads/{{ lienMenu }}">Voir les menus de la semaine</a>
+                <a class="btn button " href="{{ asset('/livraison-de-repas-gigean#repas') }}">Exemples de repas</a>
+                <a class="btn button3 text-center" target="_blank" href="../uploads/{{ lienMenu }}">Voir les menus de la semaine</a>
                 <p class="mt-3">Suppément potage: 1,00€, pain: 0,70€</p>
             </div>
         </div>
     </section>
-    <section class="section3">
+    <section class="section3" id="repas">
         <div class="parallax-effect2">
             <div class="container">
                 <div class="row text-center">
@@ -93,7 +94,7 @@
                             <h4 class="H4-rouge">Lundi</h4>
                             <ul>
                                 <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
+                                <li>Boeuf Bourguignon</li>
                                 <li>Coquillettes</li>
                                 <li>Fromage</li>
                                 <li>Fruits</li>
@@ -111,18 +112,18 @@
                         <div class="card">
                             <h4 class="H4-rouge">Mardi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
+                                <li>Charcuterie</li>
+                                <li>Saucisse de Toulouse</li>
+                                <li>Haricots plats aux cèpes</li>
                                 <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Laitage</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
-                                <li>Laitage</li>
+                                <li>Salade composée ou Potage</li>
+                                <li>Filet de poisson aux amandes</li>
+                                <li>Pommes de terre persillées</li>
+                                <li>Fruit</li>
                             </ul>
                         </div>
                     </div>
@@ -130,18 +131,18 @@
                         <div class="card">
                             <h4 class="H4-rouge">Mercredi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
-                                <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Feuilleté au fromage</li>
+                                <li>Gigoletle de dinde persillées</li>
+                                <li>Purée aux légumes</li>
+                                <li>Compote</li>
+                                <li>Madeleine</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
-                                <li>Laitage</li>
+                                <li>Salade de tomates ou Potage</li>
+                                <li>Courgette farcie</li>
+                                <li>Riz basmati</li>
+                                <li>Desset lacté</li>
                             </ul>
                         </div>
                     </div>
@@ -152,18 +153,17 @@
                             <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
                             <h4 class="H4-rouge">Jeudi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
+                                <li>Céleris sauce Cocktail</li>
+                                <li>Tartiflette</li>
                                 <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Dessert lacté</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
-                                <li>Laitage</li>
+                                <li>Pizza ou Potage</li>
+                                <li>Steack haché</li>
+                                <li>Jardinière</li>
+                                <li>Fruit</li>
                             </ul>
                         </div>
                     </div>
@@ -171,17 +171,17 @@
                         <div class="card">
                             <h4 class="H4-rouge">Vendredi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
+                                <li>Radis / beurre</li>
+                                <li>Gratin de poisson aux fruits de mer</li>
+                                <li>Riz Salrané</li>
                                 <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Pâtisserie</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
+                                <li>Charcuterie ou Potage</li>
+                                <li>Picoulat de boeuf</li>
+                                <li>pénée régaté</li>
                                 <li>Laitage</li>
                             </ul>
                         </div>
@@ -190,18 +190,16 @@
                         <div class="card">
                             <h4 class="H4-rouge">Samedi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
+                                <li>Concombres & Tomates</li>
+                                <li>Spaghettis Bolognaise</li>
                                 <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Laitage</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
-                                <li>Laitage</li>
+                                <li>Salade composée ou Potage</li>
+                                <li>Lentilles au confit de porc</li>
+                                <li>Fruit</li>
                             </ul>
                         </div>
                     </div>
@@ -214,12 +212,33 @@
             </div>
         </div>
     </section>
+    <section class="section5">
+        <div class="container text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, aut beatae debitis doloremque dolores eaque eveniet expedita illo ipsam itaque modi, nesciunt placeat possimus ratione sed suscipit vel voluptatem voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloribus eius iusto nemo nulla numquam, quibusdam quisquam quod veniam! Explicabo fuga in iste minima modi nihil obcaecati quidem sunt, ullam!</p>
+            <div class="row mt-5">
+            <div class="col">
+                <div class="block-image-zoom">
+                    <img class="img-taille-client" src="{{ asset('images/livraison-repas-gigean.jpg') }}" alt>
+                </div>
+            </div>
+            <div class="col">
+                <div class="block-image-zoom">
+                    <img class="img-taille-client" src="{{ asset('images/livraison-repas-poussan.jpg') }}" alt>
+                </div>
+            </div>
+            <div class="col">
+                <div class="block-image-zoom">
+                    <img class="img-taille-client" src="{{ asset('images/livraison-repas-balaruc.jpg') }}" alt>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
     <section class="section7">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
                     <h2 class="H2-noir">Ils nous font confiance</h2>
-                    <h3 class="H3-rouge">comment ça marche ?</h3>
                     <hr class="barre-rouge mx-auto">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium enim ex illo iste, minus molestias numquam possimus voluptas. Alias autem dicta dolorem expedita fuga laboriosam libero odit quaerat sunt voluptas.</p>
                 </div>

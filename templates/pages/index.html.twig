@@ -29,12 +29,12 @@
                         <H1 class="H1-blanc">Vos repas livrés à domicile dans
                             tout l'hérault</H1>
                         <ul class="P-blanc">
-                            <li>Paiement possible par carte titres-restaurant</li>
-                            <li>Livraison toute la semaine</li>
-                            <li>100% frais, fait-maison et naturel</li>
+                            <li><h5 class="H4-blanc">Paiement possible par carte titres-restaurant</h5></li>
+                            <li><h5 class="H4-blanc">Livraison toute la semaine</h5></li>
+                            <li><h5 class="H4-blanc">100% frais, fait-maison et naturel</h5></li>
                         </ul>
                         <div class="mb-3">
-                        <a class="btn button " href="{{ asset('#decouvre') }}">Je découvre</a>
+                        <a class="btn button " href="{{ asset('#decouvre') }}">En savoir plus</a>
                         <a class="btn button2 text-center" target="_blank" href="../uploads/{{ lienMenu }}">Voir les menus de la semaine</a>
                         </div>
                     </div>
@@ -88,12 +88,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col">
-                    <img class="img-taille mx-auto d-block " src="{{ asset('images/livraison-repas-poussan.jpg') }}"
+                    <img class="img-taille mx-auto d-block " src="{{ asset('images/livraison-repas-à-domicile-poussan.jpg') }}"
                          alt="">
                 </div>
                 <div class="col wow animate__animated animate__zoomIn">
-                    <H2 class="H2-noir">Des menus variés et personnalisés</H2>
-                    <h3 class="H3-rouge">Livrables à Gigean, poussan et dans tout l'hérault</h3>
+                    <H3>Des menus variés et personnalisés</H3>
+                    <h4 class="H3-rouge">Livrables à Gigean, poussan et dans tout l'hérault</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam consequatur debitis deleniti
                         eligendi fugiat fugit ipsum molestias nihil nobis, obcaecati praesentium quam quibusdam saepe
                         tempore temporibus veritatis voluptate! Temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid impedit ipsa laboriosam magnam odit suscipit unde vel? Assumenda esse, ex excepturi facere fuga id, incidunt odio sed sit soluta voluptate.</p>
@@ -127,12 +127,13 @@
                 </div>
             </div>
             <div class="text-center mt-5 pb-3 wow animate__animated animate__zoomIn">
-                <a class="btn button" target="_blank" href="../uploads/{{ lienMenu }}">Voir les menus de la semaine</a>
+                <a class="btn button " href="#repas">Exemples de repas</a>
+                <a class="btn button3 text-center" target="_blank" href="../uploads/{{ lienMenu }}">Voir les menus de la semaine</a>
                 <p class="mt-3">Suppément potage: 1,00€, pain: 0,70€</p>
             </div>
         </div>
     </section>
-    <section class="section4">
+    <section class="section4" id="repas">
         <div class="parallax-effect2">
             <div class="container">
                 <div class="row text-center">
@@ -148,7 +149,7 @@
                             <h4 class="H4-rouge">Lundi</h4>
                             <ul>
                                 <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
+                                <li>Boeuf Bourguignon</li>
                                 <li>Coquillettes</li>
                                 <li>Fromage</li>
                                 <li>Fruits</li>
@@ -166,18 +167,18 @@
                         <div class="card">
                             <h4 class="H4-rouge">Mardi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
+                                <li>Charcuterie</li>
+                                <li>Saucisse de Toulouse</li>
+                                <li>Haricots plats aux cèpes</li>
                                 <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Laitage</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
-                                <li>Laitage</li>
+                                <li>Salade composée ou Potage</li>
+                                <li>Filet de poisson aux amandes</li>
+                                <li>Pommes de terre persillées</li>
+                                <li>Fruit</li>
                             </ul>
                         </div>
                     </div>
@@ -185,18 +186,18 @@
                         <div class="card">
                             <h4 class="H4-rouge">Mercredi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
-                                <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Feuilleté au fromage</li>
+                                <li>Gigoletle de dinde persillées</li>
+                                <li>Purée aux légumes</li>
+                                <li>Compote</li>
+                                <li>Madeleine</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
-                                <li>Laitage</li>
+                                <li>Salade de tomates ou Potage</li>
+                                <li>Courgette farcie</li>
+                                <li>Riz basmati</li>
+                                <li>Desset lacté</li>
                             </ul>
                         </div>
                     </div>
@@ -207,18 +208,17 @@
                             <img class="mx-auto d-block" src="{{ asset('images/speed-icon.jpg') }}" width="80" alt="">
                             <h4 class="H4-rouge">Jeudi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
+                                <li>Céleris sauce Cocktail</li>
+                                <li>Tartiflette</li>
                                 <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Dessert lacté</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
-                                <li>Laitage</li>
+                                <li>Pizza ou Potage</li>
+                                <li>Steack haché</li>
+                                <li>Jardinière</li>
+                                <li>Fruit</li>
                             </ul>
                         </div>
                     </div>
@@ -226,17 +226,17 @@
                         <div class="card">
                             <h4 class="H4-rouge">Vendredi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
+                                <li>Radis / beurre</li>
+                                <li>Gratin de poisson aux fruits de mer</li>
+                                <li>Riz Salrané</li>
                                 <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Pâtisserie</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
+                                <li>Charcuterie ou Potage</li>
+                                <li>Picoulat de boeuf</li>
+                                <li>pénée régaté</li>
                                 <li>Laitage</li>
                             </ul>
                         </div>
@@ -245,18 +245,16 @@
                         <div class="card">
                             <h4 class="H4-rouge">Samedi</h4>
                             <ul>
-                                <li>Macédoine</li>
-                                <li>Beuf Bourguignon</li>
-                                <li>Coquillettes</li>
+                                <li>Concombres & Tomates</li>
+                                <li>Spaghettis Bolognaise</li>
                                 <li>Fromage</li>
-                                <li>Fruits</li>
+                                <li>Laitage</li>
                             </ul>
                             <hr>
                             <ul>
-                                <li>Pois chiche ou Potage</li>
-                                <li>Emincé de poulet</li>
-                                <li>Brocolis au jus</li>
-                                <li>Laitage</li>
+                                <li>Salade composée ou Potage</li>
+                                <li>Lentilles au confit de porc</li>
+                                <li>Fruit</li>
                             </ul>
                         </div>
                     </div>
@@ -273,8 +271,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col wow animate__animated animate__backInLeft">
-                    <h2 class="H2-noir">Livraison de repas à domicile à Poussan </h2>
-                    <h3 class="H3-rouge">Éligible au service à la personne</h3>
+                    <h3>Livraison de repas à domicile à Poussan </h3>
+                    <h4 class="H3-rouge">Éligible au service à la personne</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem ea earum excepturi id in ipsa itaque laudantium minima mollitia nihil omnis optio placeat quis quos, reiciendis rem sed voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque consequatur cupiditate, dicta dignissimos dolorum ea earum facere, id itaque laboriosam magni molestias necessitatibus neque quaerat quam quo sunt unde!</p>
                 </div>
                 <div class="col">
@@ -286,9 +284,9 @@
                     <img class="img-taille d-block mx-auto" src="{{ asset('images/service-personne.jpg') }}" alt="Service à la personne sur nos services">
                 </div>
                 <div class="col wow animate__animated animate__backInRight">
-                    <h2 class="H2-noir">Portage de repas à domicile</h2>
-                    <h3 class="H3-rouge">Éligible au service à la personne</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem ea earum excepturi id in ipsa itaque laudantium minima mollitia nihil omnis optio placeat quis quos, reiciendis rem sed voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, impedit, omnis. Dolorum error ipsum modi nulla qui recusandae rem tempore temporibus vel vero! Ad itaque laudantium mollitia odit repellat ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur doloremque eveniet labore mollitia omnis velit, vitae. Distinctio incidunt quis voluptas voluptates. Dicta dignissimos exercitationem illum inventore libero minus perferendis quia!</p>
+                    <h3>Portage de repas à domicile</h3>
+                    <h4 class="H3-rouge">Éligible au service à la personne</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem ea earum excepturi id in ipsa itaque laudantium minima mollitia nihil omnis optio placeat quis quos, reiciendis rem sed voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, impedit, omnis. Dolorum error ipsum modi nulla qui recusandae rem tempore temporibus vel vero! Ad itaque laudantium mollitia odit repellat ullam. Lorem ipsum dolor sit amet,,</p>
                 </div>
             </div>
         </div>
