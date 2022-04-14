@@ -47,6 +47,10 @@ body {
 
 }
 
+.img-taille-client2 {
+    max-width: 220px;
+}
+
 .img-taille-client {
     max-width: 300px;
     overflow:hidden
