@@ -27,7 +27,7 @@ class PagesController extends AbstractController
         ]);
     }
 
-    #[Route('/livraison-de-repas-gigean', name: 'app_menu')]
+    #[Route('/livraison-de-repas-herault', name: 'app_menu')]
     public function menu(FichiersRepository $fichiersRepository): Response
     {
 

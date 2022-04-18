@@ -9,14 +9,18 @@
                 <div class="row text-center">
                     <H1 class="H1-blanc">Besoin de nos prestations ? <br> Contactez-nous !</H1>
                     <hr class="barre-rouge mx-auto">
-                    <p class="P-blanc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut,
-                        consequuntur debitis deserunt dicta dolorem facere libero magnam, maxime minima nihil nostrum
-                        pariatur quae quam quo repudiandae rerum sapiente veritatis.</p>
+                    <p class="P-blanc">N’hésitez pas à nous contacter concernant nos services de livraison des repas à domicile, pour communiquer vos besoins ou nous poser une question. Nous vous répondrons avec plaisir, le plus rapidement possible.</p>
                 </div>
                 <div class="row mt-5">
                     <div class="col-sm-7">
                         <div class="card">
                             <h2 class="">Formulaire</h2>
+
+                            {% for message in app.flashes('success') %}
+                            <div class="alert alert-success">
+                               Merci de votre message, nous vous repondrons au plus tôt.
+                            </div>
+                           {% endfor %}
                             {{ form_start(form) }}
                             {{ form_row(form.nom) }}
                             {{ form_row(form.telephone) }}

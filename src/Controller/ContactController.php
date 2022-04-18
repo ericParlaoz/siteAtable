@@ -26,7 +26,9 @@ class ContactController extends AbstractController
             $em->persist($contact);
             $em->flush();
 
+            $this->addFlash('success', 'merci de votre message');
             return $this->redirectToRoute('app_contact');
+
         }
 
         return $this->render('contact/index.html.twig', [

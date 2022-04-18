@@ -1,15 +1,10 @@
 @font-face {
-    font-family: "montserrat-light";
+    font-family: "Montserrat";
     src: url("../assets/Montserrat-light.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "montserrat";
-    src: url("../assets/Montserrat-medium.ttf") format("truetype");
-}
-
 body {
-    font-family: "montserrat-light", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 17px;
     color: dimgrey;
     font-weight: lighter;
@@ -254,10 +249,20 @@ body {
     padding-bottom: 70px;
 }
 
+.section-realisation {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #F2F2F2;
+}
+
 .section-verte {
     background-color: green;
     padding-top: 70px;
     padding-bottom: 70px;
+}
+.section-page {
+    padding-top: 120px;
+    padding-bottom: 50px;
 }
 
 .section-herbe {
