@@ -21,6 +21,36 @@
             <script defer src="{{ asset('js/cookiechoices.js') }}"></script><script>document.addEventListener('DOMContentLoaded', function(event){cookieChoices.showCookieConsentBar('Ce site utilise des cookies pour vous offrir le meilleur service. En poursuivant votre navigation, vous acceptez l’utilisation des cookies.', 'J’accepte', 'En savoir plus', '{{ asset('/confidentialite') }}');});</script>
             <script defer src="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js') }}" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
             <script defer src="{{ asset('https://kit.fontawesome.com/eda674f759.js') }}" crossorigin="anonymous"></script>
+            <!-- Messenger Plugin de discussion Code -->
+            <div id="fb-root"></div>
+
+            <!-- Your Plugin de discussion code -->
+            <div id="fb-customer-chat" class="fb-customerchat">
+            </div>
+
+            <script>
+                var chatbox = document.getElementById('fb-customer-chat');
+                chatbox.setAttribute("page_id", "110836464856751");
+                chatbox.setAttribute("attribution", "biz_inbox");
+            </script>
+
+            <!-- Your SDK code -->
+            <script>
+                window.fbAsyncInit = function() {
+                    FB.init({
+                        xfbml            : true,
+                        version          : 'v13.0'
+                    });
+                };
+
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
         {% endblock %}
 
 
@@ -72,10 +102,6 @@
                 ><i class="fab fa-facebook-f"></i
                     ></a>
 
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-instagram"></i
-                    ></a>
 
             </section>
             <!-- Section: Social media -->

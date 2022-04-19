@@ -14,10 +14,12 @@ class PagesController extends AbstractController
     {
 
        $fichier = $fichiersRepository->findBy([], ['id' => 'DESC'], 1);
+
        if($fichier === []) {
-           throw $this->createNotFoundException('Menu indisponible');
+           $path = "";
+       } else {
+           $path = $fichier[0]->getFilename();
        }
-       $path = $fichier[0]->getFilename();
 
 
 
@@ -33,9 +35,10 @@ class PagesController extends AbstractController
 
         $fichier = $fichiersRepository->findBy([], ['id' => 'DESC'], 1);
         if($fichier === []) {
-            throw $this->createNotFoundException('Menu indisponible');
+            $path = "";
+        } else {
+            $path = $fichier[0]->getFilename();
         }
-        $path = $fichier[0]->getFilename();
 
         return $this->render('pages/menu.html.twig',[
             'lienMenu' => $path
